@@ -3,128 +3,111 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prospection‑IA — Landing officielle</title>
-  <meta name="description" content="Prospection‑IA : une web‑app qui génère des messages B2B personnalisés pour gagner du temps et augmenter les réponses." />
-  <meta property="og:title" content="Prospection‑IA — Landing" />
-  <meta property="og:description" content="Présentation du projet Prospection‑IA : pourquoi, comment, et où tester l'app." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Prospection-IA — Landing officielle</title>
+  <meta name="description" content="Prospection-IA : application web qui génère des messages B2B personnalisés en quelques secondes grâce à l’intelligence artificielle." />
+  <meta property="og:title" content="Prospection-IA" />
+  <meta property="og:description" content="Découvrez Prospection-IA, un outil qui aide les entreprises à automatiser et personnaliser leurs messages de prospection." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
-    .container { max-width: 1100px; }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body class="bg-white text-slate-800 font-[Inter]">
-  <!-- Header / Nav -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-100">
-    <nav class="container mx-auto flex items-center justify-between px-4 py-3">
-      <a href="#hero" class="text-xl font-bold">Prospection‑IA</a>
-      <ul class="hidden md:flex items-center gap-6 text-sm font-semibold">
-        <li><a class="hover:text-slate-900/70" href="#problem">Problème</a></li>
-        <li><a class="hover:text-slate-900/70" href="#solution">Solution</a></li>
-        <li><a class="hover:text-slate-900/70" href="#how">Comment ça marche</a></li>
-        <li><a class="hover:text-slate-900/70" href="#about">À propos</a></li>
-        <li><a class="hover:text-slate-900/70" href="#contact">Contact</a></li>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur border-b border-gray-100 z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center py-3 px-4">
+      <h1 class="text-xl font-bold">Prospection-IA</h1>
+      <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <li><a href="#features" class="hover:text-gray-500">Fonctionnalités</a></li>
+        <li><a href="#about" class="hover:text-gray-500">À propos</a></li>
+        <li><a href="#deliverables" class="hover:text-gray-500">Livrables</a></li>
       </ul>
-      <div class="flex gap-2">
-        <a href="https://tmakni.github.io/holbertonschool-prospection/" class="inline-flex items-center justify-center rounded-xl bg-black text-white text-sm px-4 py-2 font-semibold shadow-sm hover:opacity-90">Ouvrir l’app</a>
-        <a href="https://github.com/Tmakni/holbertonschool-prospection" class="inline-flex items-center justify-center rounded-xl border border-slate-300 text-sm px-4 py-2 font-semibold hover:bg-slate-50">Voir le code</a>
-      </div>
+      <a href="https://tmakni.github.io/holbertonschool-prospection/" class="bg-black text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">Accéder à l’application</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="hero" class="container mx-auto px-4 pt-16 pb-20 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight">Prospection‑IA<br><span class="text-slate-500">La page d’intro du projet</span></h1>
-      <p class="mt-4 text-slate-600">Une web‑app qui aide à écrire des messages de prospection B2B <strong>personnalisés</strong> en quelques secondes. Objectif : moins de copier‑coller, plus de réponses.</p>
-      <div class="mt-6 flex flex-wrap gap-3">
-        <a href="https://tmakni.github.io/holbertonschool-prospection/" class="rounded-xl bg-black text-white px-5 py-3 text-sm font-semibold shadow hover:opacity-90">Ouvrir l’application</a>
-        <a href="#problem" class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold hover:bg-slate-50">Pourquoi ce projet ?</a>
+  <!-- Hero Section -->
+  <section id="intro" class="pt-28 pb-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">Générez des messages B2B personnalisés en quelques secondes</h2>
+        <p class="mt-4 text-gray-600 text-lg">Prospection-IA aide les entreprises à automatiser leur prospection grâce à l’intelligence artificielle, tout en gardant une touche humaine.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="https://tmakni.github.io/holbertonschool-prospection/" class="bg-black text-white px-5 py-3 rounded-lg text-sm font-semibold hover:opacity-90">Ouvrir l’application</a>
+          <a href="#features" class="border border-gray-300 px-5 py-3 rounded-lg text-sm font-semibold hover:bg-gray-100">Découvrir</a>
+        </div>
       </div>
-    </div>
-    <div class="relative">
-      <img class="rounded-2xl shadow-xl w-full" alt="Aperçu tableau de bord" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop" />
+      <img src="https://cdn.dribbble.com/userupload/9242872/file/original-86ff24b8262ce5fdd3c5f13b6b416bb4.png?resize=1024x768" alt="Prospection-IA Dashboard" class="rounded-xl shadow-lg" />
     </div>
   </section>
 
-  <!-- Problem -->
-  <section id="problem" class="bg-slate-50 border-y border-slate-100">
-    <div class="container mx-auto px-4 py-16">
-      <h2 class="text-3xl font-bold">Le problème</h2>
-      <p class="mt-3 text-slate-600 max-w-3xl">Beaucoup d’équipes ont de bons produits mais peinent à l’expliquer rapidement à chaque prospect. Résultat : messages génériques, temps perdu à réécrire, faible taux de réponse.</p>
-      <ul class="mt-6 grid md:grid-cols-3 gap-4 text-sm text-slate-700">
-        <li class="bg-white rounded-xl p-4 border">Répétition des mêmes messages</li>
-        <li class="bg-white rounded-xl p-4 border">Manque de personnalisation</li>
-        <li class="bg-white rounded-xl p-4 border">Outils chers/complexes</li>
-      </ul>
-    </div>
-  </section>
+  <!-- Features -->
+  <section id="features" class="py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold">Fonctionnalités principales</h2>
+      <p class="text-gray-600 mt-2 mb-10">Les trois piliers de Prospection-IA : rapidité, personnalisation et simplicité.</p>
 
-  <!-- Solution -->
-  <section id="solution" class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold">La solution</h2>
-    <p class="mt-3 text-slate-600 max-w-3xl">Prospection‑IA génère des messages adaptés à la personne, au contexte et à l’objectif. Tu gardes le contrôle du ton et des infos, l’IA fait le gros du travail d’écriture.</p>
-    <div class="mt-6 flex gap-3">
-      <a href="https://tmakni.github.io/holbertonschool-prospection/" class="rounded-xl bg-black text-white px-5 py-3 text-sm font-semibold shadow hover:opacity-90">Tester l’app</a>
-      <a href="https://github.com/Tmakni/holbertonschool-prospection" class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold hover:bg-slate-50">Voir le code</a>
-    </div>
-  </section>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <img src="https://cdn-icons-png.flaticon.com/512/4144/4144714.png" class="w-16 mx-auto mb-4" alt="Import CSV" />
+          <h3 class="font-bold text-lg mb-2">Import de contacts</h3>
+          <p class="text-sm text-gray-600">Chargez facilement vos listes de prospects via un fichier CSV et préparez vos campagnes en quelques clics.</p>
+        </div>
 
-  <!-- How it works -->
-  <section id="how" class="bg-slate-50 border-y border-slate-100">
-    <div class="container mx-auto px-4 py-16">
-      <h2 class="text-3xl font-bold">Comment ça marche (vue simple)</h2>
-      <ol class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
-        <li class="bg-white rounded-2xl p-5 border">
-          <p class="font-semibold">1) Crée un compte et connecte‑toi</p>
-          <p class="text-slate-600 mt-1">Sécurité de base et historique personnel des messages.</p>
-        </li>
-        <li class="bg-white rounded-2xl p-5 border">
-          <p class="font-semibold">2) Donne le contexte</p>
-          <p class="text-slate-600 mt-1">Cible, objectif, ton, infos business. L’IA adapte le texte.</p>
-        </li>
-        <li class="bg-white rounded-2xl p-5 border">
-          <p class="font-semibold">3) Récupère le message</p>
-          <p class="text-slate-600 mt-1">Copie, enregistre, réutilise depuis l’historique. (Envoi email prévu)</p>
-        </li>
-      </ol>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" class="w-16 mx-auto mb-4" alt="IA" />
+          <h3 class="font-bold text-lg mb-2">Génération intelligente</h3>
+          <p class="text-sm text-gray-600">L’IA adapte le ton et le contenu selon le prospect, le contexte et l’objectif de votre message.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <img src="https://cdn-icons-png.flaticon.com/512/3114/3114883.png" class="w-16 mx-auto mb-4" alt="Historique" />
+          <h3 class="font-bold text-lg mb-2">Historique & réutilisation</h3>
+          <p class="text-sm text-gray-600">Retrouvez vos messages passés, réutilisez-les ou ajustez-les pour de nouvelles campagnes.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold">À propos</h2>
-    <p class="mt-3 text-slate-600 max-w-3xl">Projet personnel développé pour mon Demo Day (Holberton). Stack : Front HTML/CSS, Back Node/Express, Base MySQL, intégration OpenAI. But : un outil concret, rapide, et facile à prendre en main.</p>
-    <div class="mt-6 text-sm text-slate-500">
-      <a class="underline hover:text-slate-700" href="https://github.com/Tmakni/holbertonschool-prospection" target="_blank" rel="noreferrer">Repo GitHub</a>
-    </div>
-  </section>
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">À propos du projet</h2>
+      <p class="text-gray-700 max-w-3xl">
+        Prospection-IA est né de mon envie de créer un outil concret, capable d’aider les professionnels à gagner du temps sur une tâche essentielle : la prospection.
+        <br><br>
+        Ce projet a été conçu dans le cadre de mon <strong>Portfolio Project à Holberton School</strong>. Il m’a permis de combiner mes connaissances en développement full-stack (HTML, CSS, Node.js, MySQL) et mon intérêt pour l’intelligence artificielle.
+      </p>
 
-  <!-- Contact -->
-  <section id="contact" class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold">Contact</h2>
-    <p class="mt-2 text-slate-600">Tu veux en savoir plus, tester, ou proposer une collab ? Écris‑moi.</p>
-    <form class="mt-6 grid gap-4 max-w-xl" netlify>
-      <input class="border border-slate-300 rounded-xl px-4 py-3" type="text" name="name" placeholder="Ton nom" required>
-      <input class="border border-slate-300 rounded-xl px-4 py-3" type="email" name="email" placeholder="Ton email" required>
-      <textarea class="border border-slate-300 rounded-xl px-4 py-3" name="message" rows="5" placeholder="Ton message" required></textarea>
-      <button class="rounded-xl bg-black text-white px-5 py-3 text-sm font-semibold shadow hover:opacity-90" type="submit">Envoyer</button>
-    </form>
-  </section>
-
-  <footer class="border-t border-slate-100">
-    <div class="container mx-auto px-4 py-8 text-sm text-slate-500 flex flex-wrap items-center justify-between gap-2">
-      <p>© <span id="year"></span> Prospection‑IA. Tous droits réservés.</p>
-      <div class="flex gap-4">
-        <a class="hover:text-slate-700" href="#">Mentions légales</a>
-        <a class="hover:text-slate-700" href="#">Confidentialité</a>
+      <div class="mt-8">
+        <h3 class="font-semibold mb-2 text-lg">Liens utiles</h3>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li>🔗 <a href="https://github.com/Tmakni/holbertonschool-prospection" target="_blank" class="underline hover:text-gray-800">Repo GitHub du projet</a></li>
+          <li>👤 <a href="https://www.linkedin.com/in/tommakni" target="_blank" class="underline hover:text-gray-800">Mon LinkedIn</a></li>
+          <li>🐦 <a href="https://twitter.com" target="_blank" class="underline hover:text-gray-800">Mon Twitter</a></li>
+        </ul>
       </div>
     </div>
+  </section>
+
+  <!-- Deliverables -->
+  <section id="deliverables" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6">Livrables</h2>
+      <ul class="text-gray-700 text-sm space-y-3">
+        <li>🌐 <strong>Landing Page :</strong> <a href="https://tmakni.github.io/landing-prospection/" class="underline hover:text-gray-800">https://tmakni.github.io/landing-prospection/</a></li>
+        <li>🎥 <strong>Vidéo YouTube :</strong> <a href="#" class="underline hover:text-gray-800">à venir</a></li>
+        <li>💻 <strong>Application déployée :</strong> <a href="https://tmakni.github.io/holbertonschool-prospection/" class="underline hover:text-gray-800">Lien vers l’app</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-100 py-6 text-center text-sm text-gray-500">
+    © <span id="year"></span> Prospection-IA — Tom Makni. Tous droits réservés.
   </footer>
 
   <script>
